@@ -20,7 +20,7 @@ website and extracted into a standalone, tested library.
 Not published to npm yet. To try it:
 
 ```bash
-git clone https://github.com/jbsehenn/request-guard.git
+git clone https://github.com/techodos-dev/request-guard.git
 cd request-guard && npm ci && npm run build
 ```
 
