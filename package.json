@@ -32,5 +32,13 @@
     "@types/node": "^22.20.5",
     "@upstash/redis": "^1.41.0",
     "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techodos-dev/request-guard.git"
+  },
+  "homepage": "https://github.com/techodos-dev/request-guard#readme",
+  "bugs": {
+    "url": "https://github.com/techodos-dev/request-guard/issues"
   }
 }
