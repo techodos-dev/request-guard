@@ -1,0 +1,36 @@
+{
+  "name": "request-guard",
+  "version": "0.1.0",
+  "description": "Idempotency and rate limiting for serverless HTTP handlers, backed by Redis or any key-value store.",
+  "license": "MIT",
+  "author": "JB Rocha",
+  "keywords": [
+    "idempotency",
+    "rate-limit",
+    "serverless",
+    "redis",
+    "upstash",
+    "vercel"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "pretest": "rm -rf build-test && tsc -p tsconfig.test.json",
+    "test": "node --test build-test/test/*.test.js",
+    "coverage": "npm run pretest && node --test --experimental-test-coverage --test-coverage-include='build-test/src/**' build-test/test/*.test.js",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@upstash/redis": "^1.41.0",
+    "typescript": "^5.9.3"
+  }
+}
